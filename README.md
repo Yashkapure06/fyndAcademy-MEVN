@@ -1,5 +1,3 @@
-# Fynd Academy - _MEVN Stack_
-
 <style>
 .css-selector {
         padding:25px 0 25px 0 ;
@@ -35,6 +33,15 @@
     100%{background-position:0% 51%}
 }
 </style>
+
+
+
+
+
+# Fynd Academy - _MEVN Stack_
+
+
+
 
 <center>
 <div {#identifer .css-selector}>
