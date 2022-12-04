@@ -19,3 +19,8 @@
 
 </div>
 </center>
+
+
+| Day | Read Details |
+| ------- | ----------- |
+| Day 1| | [Read Details](https://github.com/) |
