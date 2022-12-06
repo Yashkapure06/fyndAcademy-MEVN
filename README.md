@@ -30,3 +30,4 @@
 | Day 3 `2-12-2022`| [Read Details](/Day-3/Day-3.md) |
 | Day 3 - `Assignment 3`| [Read Details](/Day-3/Ass3.html) |
 | Day 3 - `Weekly Assignment`| [Read Details](/Day-3/weekEndTask.html) |
+| Day 4 - `4-12-2022`| [Read Details](/Day-4/Day-4.md) |
