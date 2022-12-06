@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 : Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <!--* Try Different Password?  -->
+        <label for="password">Password</label>
+        <input type="password" style="-webkit-text-security: disc;" />
+        <br>
+        <!--* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-security#:~:text=%2Dwebkit%2Dtext%2Dsecurity%20is,replacing%20them%20with%20a%20shape.  -->
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <br>
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select">
+            <option value="" selected disabled>--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </form>
+    
+</body>
+</html>
