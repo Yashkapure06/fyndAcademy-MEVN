@@ -8,28 +8,37 @@
 </head>
 <body>
     <h1>Forms</h1>
-    <form action="">
+    <form action="" method="GET"><!--* POST-->
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
+        <br>
         <br>
         <label for="email">Email</label>
         <input type="email" name="email" id="email">
         <br>
-        <!--* Try Different Password?  -->
+        <br>
         <label for="password">Password</label>
         <input type="password" style="-webkit-text-security: disc;" />
+        <br>
         <br>
         <!--* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-security#:~:text=%2Dwebkit%2Dtext%2Dsecurity%20is,replacing%20them%20with%20a%20shape.  -->
         <label for="phone">Phone</label>
         <input type="tel" name="phone" id="phone">
         <br>
+        <br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="female" id="gender"> Female
+        <input type="radio" name="male" id="gender"> Male
+        <br>
+        <br>
         <label for="address">Address</label>
-        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <textarea name="address" id="address" cols="25" rows="10"></textarea>
+        <br>
         <br>
         <label for="pet-select">Choose a pet:</label>
 
         <select name="pets" id="pet-select">
-            <option value="" selected disabled>--Please choose an option--</option>
+            <option value="" selected disabled >--Please choose an option--</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
             <option value="hamster">Hamster</option>
@@ -37,6 +46,9 @@
             <option value="spider">Spider</option>
             <option value="goldfish">Goldfish</option>
         </select>
+        <br>
+        <br>
+        <input type="submit" value="click">
     </form>
     
 </body>
