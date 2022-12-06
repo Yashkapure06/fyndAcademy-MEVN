@@ -23,11 +23,12 @@
 
 | Day & Date| Read Details |
 | ------- | ----------- |
-| Day 1 `30-11-2022`| [Read Details](/Day-1/Day-1.md) |
-| Day 2 `1-12-2022`| [Read Details](/Day-2/Day-2.md) |
+| Day 1 - `30-11-2022`| [Read Details](/Day-1/Day-1.md) |
+| Day 2 - `1-12-2022`| [Read Details](/Day-2/Day-2.md) |
 | Day 2 - `Assignment 1`| [Read Details](/Day-2/Ass1.md) |
 | Day 2 - `Assignment 2`| [Read Details](/Day-2/Ass2.html) |
-| Day 3 `2-12-2022`| [Read Details](/Day-3/Day-3.md) |
+| Day 3 - `2-12-2022`| [Read Details](/Day-3/Day-3.md) |
 | Day 3 - `Assignment 3`| [Read Details](/Day-3/Ass3.html) |
 | Day 3 - `Weekly Assignment`| [Read Details](/Day-3/weekEndTask.html) |
-| Day 4 - `4-12-2022`| [Read Details](/Day-4/Day-4.md) |
+| Day 4 - `5-12-2022`| [Read Details](/Day-4/Day-4.md) |
+|Day 5 - `6-12-2022`|Done with HTML Basics🚀👋|
