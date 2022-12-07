@@ -31,4 +31,5 @@
 | Day 3 - `Assignment 3`| [Read Details](/Day-3/Ass3.html) |
 | Day 3 - `Weekly Assignment`| [Read Details](/Day-3/weekEndTask.html) |
 | Day 4 - `5-12-2022`| [Read Details](/Day-4/Day-4.md) |
-|Day 5 - `6-12-2022`|Done with HTML Basics🚀👋|
+| Day 5 - `6-12-2022`|Done with HTML Basics🚀👋|
+| Day 5 - `6-12-2022`| [Read Details](/Day-5/Day-5.md) |
