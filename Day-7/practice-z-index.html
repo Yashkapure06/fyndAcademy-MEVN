@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 : Practice Z-Index</title>
+    <style>
+        .container1{
+            border: 1px solid #000;
+            width: 70vw;
+            height: 100vh;
+        }
+        .container2{
+            border: 1px solid #000;
+            width: 50%;
+            height: 50%;
+            margin:15px;
+            position: relative;
+            z-index: 1;
+            background-color: lightblue;
+        }
+        .container3{
+            border: 1px solid #000;
+            width: 250px;
+            height: 250px;
+            margin:15px;
+            background-color: pink;
+            position: relative;
+            z-index: 1;
+        }
+        .container4{
+            border: 1px solid #000;
+            width: 250px;
+            height: 250px;
+            margin:15px;
+            background-color: yellow;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="container2">
+            <div class="container4"></div>
+        </div>
+        <div class="container3">
+            <div></div>
+        </div>
+    </div>
+    
+</body>
+</html>
