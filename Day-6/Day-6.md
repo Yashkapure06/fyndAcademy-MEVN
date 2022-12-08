@@ -24,3 +24,10 @@
     * hsl >> `hsl(hue, saturation, lightness)`
     * hsla >> `hsla(hue, saturation, lightness, alpha)`
     * hex >> `hex > #123456`
+  
+  * backgroung 
+    * background-color >> `background-color:#fff;`
+    * background-image >> `background-image:url('')`
+    * background-size >> `background-size:400% 400%;`
+    * background-position >> `background-position: right/left/center/bottom/`
+    * background >> `background: you can pass many arguments`
