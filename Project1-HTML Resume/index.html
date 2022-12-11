@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <style>
-
         * {
             margin: 0;
             font-family: "Poppins", sans-serif;
@@ -30,26 +29,33 @@
             color: #fff;
         }
 
-        .cols {
-            float: left;
-            width: 50%;
-            padding: 10px;
+        table {
+            width: 90%;
+            padding: 25px;
+            margin: 25px;
+            border-collapse: collapse;
+            text-align: justify;
         }
 
-        .contact p {
-            display: flex;
-            align-items: center;
+        thead th {
+            border: none;
             padding: 10px;
-            text-align: center;
-        }
-        .contact a{
-            color:#000;
+            text-align: left;
+
         }
 
-        .education {
-            margin-left: 50px;
-            display: flex;
-            flex-direction: column;
+        tbody tr td {
+            border: none;
+            padding: 10px;
+            text-align: left;
+        }
+        ul li {
+            text-align: justify;
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
         }
     </style>
 </head>
@@ -92,55 +98,195 @@
                 <hr class="hr">
         </center>
     </section>
-    <section class="contact" >
+    <section>
         <p style="
-        color: #000 !important;
-        border-radius: 5px;
-        "   >
+            display: flex;
+            align-items: center;
+            text-align: center;
+        ">
             <center>
-                <a href="mailto:yashkapure06@gmail.com">yashkapure06@gmail.com</a>
-                <a href="tel:+917028073007">+91 7028073008</a>
-                <a href="https://goo.gl/maps/woJ7hmfBcfZHSeS46" target="_blank">India, Nashik</a>
+                <a style="color: #000;"href="mailto:yashkapure06@gmail.com">yashkapure06@gmail.com</a>
+                <a style="color: #000;"href="tel:+917028073007">+91 7028073008</a>
+                <a style="color: #000;"href="https://goo.gl/maps/woJ7hmfBcfZHSeS46" target="_blank">India</a>
             </center>
         </p>
 
     </section>
 
-    <br>
-    <hr class="hr">
-    <br>
+    
 
-    <section class="education">
-        <div class="row">
-            <div class="cols">
-                <h2>EDUCATION</h2>
+    <center>
+        <table >
+            <thead>
+                <th>
+                    <h1>Education</h1>
+                </th>
+                <th>
+                    <h1>Skills</h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>B.E. Computer Science (4th Year)</h3>
+                        <h5>SPPU</h5>
+                        <h6><i style="color:rgb(197, 197, 197)">2019-2023</i></h6>
+                        <h4>MET Bhujbal Knowledge City</h4>
+                        <h6>CGPA: 9.50(Last Sem)</h6>
+                        <br><br>
 
-                <p>
-                <h3>B.E. Computer Science (4th Year)</h3>
-                <h5>SPPU</h5>
-                <h4>MET Bhujbal Knowledge City</h4>
-                <h4>2019 - 2023</h4>
-                <h6>CGPA: 9.50(Last Sem)</h6>
-                <br><br>
+                        <h3>Higher Secondary</h3>
+                        <h5>HSC</h5>
+                        <h6><i style="color:rgb(197, 197, 197)">2017-2019</i></h6>
+                        <h4>St. Lawrence School and Jr. College</h4>
+                        <h6>Percentage: 72.00%</h6>
+                    </td>
+                    <td>
+                        <h3 style="margin-top:-2%">Front-End</h3>
+                        <h5>
+                            <button>React.js</button>
+                            <button>Next.js</button>
+                            <button>JavaScript</button>
+                            <button>CSS</button>
+                            <button>HTML</button>
 
-                <h3>Higher Secondary</h3>
-                <h5>SSC</h5>
-                <h4>St. Lawrence School and Jr. College</h4>
-                <h4>2017 - 2019</h4>
-                <h6>Percentage: 72.00%</h6>
-                </p>
-                <br>
-                <br>
-                <h2>WORK EXPERIENCE</h2>
-            </div>
-            <div class="cols">
-                <h2>Skills</h2>
-                <p>Some text..</p>
-            </div>
-        </div>
+                        </h5><br>
+                        <h3>Back-End</h3>
+                        <h5>
+                            <button>Node.js</button>
+                            <button>Express.js</button>
+                            <button>MongoDB</button>
+                        </h5><br>
+                        <h3>Other</h3>
+                        <h5>
+                            <button>React Native</button>
+                            <button>Git</button>
+                            <button>GitHub</button>
+                            <button>Python</button>
+                            <button>Java</button>
+                            <br><br>
+                            <button>MERN Stack</button>
+                            <button>Full Stack Development</button>
+                            <button>Leadership</button>
+                            <button>Communication</button>
 
-    </section>
+                        </h5>
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <th>
+                    <h1>Work Experience</h1>
+                </th>
+                <th >
+                    <h1>Personal Projects</h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Full Stack Developer - Intern (Remote)</h3>
+                        <h5>Anandlok Ayurveda & Panchakarma Hospital</h5>
+                        <h6><i style="color:rgb(197, 197, 197)">12/2021 - 12/2022</i></h6>
+                        <ul>
+                            <li>Designed and Developed fully functional website in Latest
+                                <br>Technology Next.js, React.js
+                            </li>
+                            <li>
 
+                                Worked alone to develop more invigorating web content
+                            </li>
+                            <li>
+                                Worked on Reusable components
+                            </li>
+                            <li>
+                                <a style="color:#550fc6; font-weight:bold;" href="https://www.anandlokayurved.com/"
+                                    target="_blank">Go Live</a>
+                            </li>
+                        </ul>
+                        <br><br>
+                        <h3>Full Stack Lead</h3>
+                        <h5>Google Developer Students Club</h5>
+                        <h6><i style="color:rgb(197, 197, 197)">04/2022 - 06/2023</i></h6>
+                        <ul>
+                            <li>
+                                Successfully Conducted <b>Git & GitHub</b> Sessions for fellow
+                                students
+                            </li>
+                            <li>
+                                Guiding more than <b>100+ students</b> in Full Stack
+                                Development
+                            </li>
+                            <li>
+                                Currently Teaching Basics Of Web Development i.e, <b>FrontEnd</b>
+                            </li>
+                            <li>
+                                Backend with database sessions are coming soon
+                            </li>
+                    </td>
+                    <td >
+                        <h4 style="margin-top:-20%">Netflix Clone (07/2022 - 08/2022)</h4>
+                        <ul>
+                            <li>
+                                Netflix Clone using React JS
+                            </li>
+                            <li>
+                                TMDB API
+                            </li>    
+                            <li>
+                                <a style="color:#550fc6; font-weight:bold;" href="https://netflix-clone-06.netlify.app/" target="_blank">Go Live</a>
+                            </li>
+                        </ul>
+                        <h4 style="margin-top:5%">Space Talks - MERN Application (05/2021 - 08/2021)</h4>
+                        <ul>
+                            <li>
+                                MERN Application
+                            </li>
+                            <li>
+                                MERN Application A platform for space lovers to<br> share their knowledge
+                            </li>
+                            <li>
+                                <a style="color:#550fc6; font-weight:bold;" href="https://space-talks.netlify.app/" target="_blank">Go Live</a>
+                            </li>
+                        </ul>
+                        <h4>Open Source Contributions (01/2021 - Present)</h4>
+                        <ul>
+                            <li>Contributing in open source projects on <b>GitHub</b></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+                <th>
+                   
+                </th>
+                <th>
+                    <h1 style="margin-top:-12%">Languages</h1>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <ul style="display:flex; margin-top:-5%">
+                            <li style="padding-right:30px">
+                                <h3>English</h3>
+                                <h5>Fluent</h5>
+                            </li>
+                            <li style="padding-right:30px">
+                                <h3>Marathi</h3>
+                                <h5>Native</h5>
+                            </li>
+                            <li style="padding-right:30px">
+                                <h3>Hindi</h3>
+                                <h5>Fluent</h5>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
 
 </body>
 
