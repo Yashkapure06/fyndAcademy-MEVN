@@ -36,4 +36,6 @@
 | Day 5 - `6-12-2022`| Started CSS Basics🚀👋|
 | Day 5 - `6-12-2022`| [Read Details](/Day-5/Day-5.md) |
 | Day 6 - `7-12-2022`| [Read Details](/Day-6/Day-6.md) |
+| Day 7 - `8-12-2022`| [Read Details](/Day-7/Day-7.md) |
+| Day 8 - `9-12-2022`| [Read Details](/Day-8/Day-8.md) |
 
