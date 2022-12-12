@@ -19,6 +19,9 @@
 
 </div>
 </center>
+<br>
+
+[![wakatime](https://wakatime.com/badge/user/ebd9048f-e0e9-4dcc-acbc-0fc646a232fa/project/3db170c6-e5d5-4b37-a5d1-3b741b7bf13e.svg)](https://wakatime.com/badge/user/ebd9048f-e0e9-4dcc-acbc-0fc646a232fa/project/3db170c6-e5d5-4b37-a5d1-3b741b7bf13e)
 
 
 | Day & Date| Read Details |
