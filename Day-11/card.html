@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11: Success Card Animation</title>
+    <style>
+        .card{
+            text-align: center;
+            right:-10px;
+            width: 300px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            position: relative;
+            border: 2px solid rgb(1, 255, 1);
+            animation-name: card;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+        }
+        div.card{
+            margin-left:100%;
+        }
+        h1{
+            font-size: 3rem;
+            color: rgb(37, 46, 37);
+            margin-top: 20px;
+        }
+        p{
+            font-size: 1.2rem;
+            color: rgb(37, 46, 37);
+        }
+        @keyframes card{
+            0%{
+                margin-left:100%;
+            }
+            50%{
+                margin-left:73%;
+            }
+            100%{
+                margin-left:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment for Popup </h1>
+    <div class="card">
+            <h1>Success</h1>
+            <p>Logged IN Successfully!</p>
+    </div>
+    
+</body>
+</html>

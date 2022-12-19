@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11: Design Syllabus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, #0b2b8c, #000000);
+            background-size: 1500% 1500%;
+            animation: bgColor 35s ease infinite;
+        }
+
+        @keyframes bgColor {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        .static {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .foundation {
+            margin-top: 2em;
+            display: flex;
+            /*background-image: url('');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 90% 50%;*/
+        }
+
+        .project {
+            margin-top: 15px;
+            background-color: white;
+            border: 2px solid #000;
+            margin: 1em;
+            height: 1.7em;
+            overflow: hidden;
+            padding: 0.7em;
+            border-radius: 0.5em;
+            transition: 2.5s;
+            width: 13em;
+        }
+
+        .project2 {
+            margin-top: 15px;
+            background-color: white;
+            border: 2px solid #000;
+            margin: 1em;
+            height: 1.7em;
+            overflow: hidden;
+            padding: 0.7em;
+            border-radius: 0.5em;
+            transition: 2.5s;
+            width: 13em;
+        }
+
+        .project2:hover {
+            box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+            transform: translate(-90px);
+            height: 15em;
+            cursor: pointer;
+        }
+
+        .project3 {
+            margin-top: 15px;
+            background-color: white;
+            border: 2px solid #000;
+            margin: 1em;
+            height: 1.7em;
+            overflow: hidden;
+            padding: 0.7em;
+            border-radius: 0.5em;
+            transition: 2.5s;
+            width: 13em;
+        }
+
+        .project4 {
+            margin-top: 15px;
+            background-color: white;
+            border: 2px solid #000;
+            margin: 1em;
+            height: 1.7em;
+            overflow: hidden;
+            padding: 0.7em;
+            border-radius: 0.5em;
+            transition: 2.5s;
+            width: 13em;
+        }
+
+        .project4:hover {
+            transform: translateY(-90px);
+            box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+            height: 15em;
+            cursor: pointer;
+        }
+
+        .project3:hover {
+            box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+            transform: translateY(-90px);
+            height: 15em;
+            cursor: pointer;
+        }
+
+        .project:hover {
+            width: 18em;
+            box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+            height: 4em;
+            cursor: pointer;
+            height: 15em;
+            font-size: 15px;
+            color: #0b2b8c;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+        }
+
+        h1 {
+            margin: -1em 0 0.5em;
+            text-transform: uppercase;
+            font-size: 3.12em;
+            padding-top: 3em;
+            color: #FFF;
+            animation-name: awesomeFont;
+        }
+
+        p {
+            color: #FFF;
+            font-size: 1.2em;
+            margin: 0 0 0.5em 0;
+            text-align: center;
+            width: 1055px;
+        }
+
+        h1:hover {
+            text-shadow: 0px 0px 5px rgb(8, 240, 27);
+        }
+
+        h3 {
+            text-transform: uppercase;
+            background-color: #0b2b8c;
+            font-size: 1em;
+            color: #FFF;
+            padding: 0.2em;
+            margin: 0 0 0.5em 0;
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 0 0 0.5em 0;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 0 0 0.5em 0;
+            position: relative;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="static">
+
+        <h1>Web Development</h1>
+        <p>Under the topic of introduction to web technologies in the web designing course syllabus, students get to
+            learn about technical aspects of creating a website as well as types of websites. Here are the key topics
+            covered under this section:</p>
+        <div class="foundation">
+            
+               
+
+            <div class="project">
+                <h3>
+                    HTML
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project">
+                <h3>
+                    CSS
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project">
+                <h3>
+                    JavaScript
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project">
+                <h3>
+                    Vue.js
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            
+               
+
+        </div>
+        <div class="foundation">
+            
+               
+
+
+            <div class="project">
+                <h3>
+                    HTML
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project">
+                <h3>
+                    CSS
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project3">
+                <h3>
+                    JavaScript
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>    
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project4">
+                <h3>
+                    Vue.js
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            
+               
+
+        </div>
+        <div class="foundation">
+            
+               
+
+
+            <div class="project">
+                <h3>
+                    HTML
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project">
+                <h3>
+                    CSS
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project3">
+                <h3>
+                    JavaScript
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            <div class="project4">
+                <h3>
+                    Vue.js
+                </h3>
+                <h4>Day - 1</h4>
+                <h4>Day - 2</h4>
+                <h4>Day - 3</h4>
+                <h4>Day - 4</h4>
+                <h4>Day - 5</h4>
+                <h4>Day - 6</h4>
+            </div>
+            
+               
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
