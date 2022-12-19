@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 : Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            display: flex;
+            background-color:yellow;
+            /*flex-direction: row;*/
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        section div{
+            width: 30%;
+            padding:20px;
+            border: 1px solid #000;
+        }
+        .flex1{
+            background-color: rgb(188, 236, 255);
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: centre;
+        }
+        .flex1 div{
+            border-radius: 5px;
+        }
+        .div1{
+            background-color: rgb(225, 254, 129);
+            color: black;
+        }
+        .div2{
+            background-color: rgb(4, 180, 255);
+            color: black;
+        }
+        .div3{
+            background-color: rgb(255, 118, 161);
+            color: black;
+        }
+
+        .flex2{
+            background-color: rgb(188, 255, 195);
+            color: black;
+        }
+        .flex3{
+            background-color: rgb(255, 188, 209);
+            color: black;
+        }
+        @media(max-width:700px){
+            section{
+                display: flex;
+                width:100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="flex1">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </div>
+        <div class="flex2">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti esse possimus enim natus fugit debitis eaque explicabo maxime quo modi aperiam, non quae sapiente eligendi quasi quidem dolores totam.</div>
+        <div class="flex3">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti esse possimus enim natus fugit debitis eaque explicabo maxime quo modi aperiam, non quae sapiente eligendi quasi quidem dolores totam.</div>
+    </section>
+    
+</body>
+</html>

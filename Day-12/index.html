@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12: Grid</title>
+    <style>
+        
+        .container{
+           display:grid;
+           grid-gap: 2rem;
+           background-color: #1c1c74;
+           grid-template-areas: 
+              "navbar navbar navbar navbar"
+                "main main main sidebar";
+           ;
+        }
+        .griddemo{
+            background-color:rgb(0, 200, 255);
+            border: 2px solid black;
+        }
+        .header{
+            grid-area: navbar;
+        }
+        .section{
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+    </style>
+</head>
+<body>
+    <h1>We are learning about Grid</h1>
+    <div class="container ">
+        <div class="header griddemo">
+            home about us contact
+        </div>
+        <div class="section griddemo">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <div class="sidebar griddemo">
+            <h2>Sidebar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+    </div>
+</body>
+</html>
