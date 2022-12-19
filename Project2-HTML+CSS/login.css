@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f8eded;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fffc00;
+  }
+body {
+  background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+#id1 {
+  width: 350px;
+  height: 400px;
+  margin-top: 100px;
+  background-color: white;
+border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 140, 186, 0.5);
+}
+.img {
+    max-width: 50px;
+    max-height: 50px;
+    align-items: center;
+    margin-top: 20px;
+
+}
+h3 {
+  text-align: center;
+  font-style: initial;
+}
+.c1 {
+  width: 280px;
+  height: 30px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #f7f7f7;
+  border: none;
+  outline: 0px;
+  border-radius: 7px;
+}
+#id1 label {
+  font-size: 12px;
+  font-weight: 600;
+    color: rgb(153, 149, 149);
+    left: 0;
+  
+}
+.c2 {
+  padding-top: 20px;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(234, 234, 14);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0 10px 1px rgba(0, 140, 186, 0.5);
+}
+.c5 {
+  margin-left: 200px;
+}
+a {
+    text-decoration: none;
+    margin-right:20px;
+    font-size: 10px;
+    color: rgb(153, 149, 149);
+}
+
+.footer {
+    background-color: #fff;
+    padding: 70px 0;
+  }
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    color: #252525;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #252525;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col img {
+    width: 170px;
+    height: 170px;
+    margin-left: 45px;
+  }
+  .footer2 {
+    background-color: #111111;
+    color: #fff;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+.container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul {
+    list-style: none;
+  }
+  /* Responsive */
+  @media (max-width: 991px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .footer-col {
+      width: 100%;
+    }
+  }
+  @media (max-width: 575px) {
+    .footer-col {
+      margin-bottom: 0;
+    }
+  }
