@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 : animation</title>
+    <style>
+        body {
+            background-position: relative;
+            animation-iteration-count: infinite;
+            animation-name: backgroundTransition;
+            animation-duration: 5s;
+            background: linear-gradient(270deg, #5058c3, #000000);
+            background-size: 400% 400%;
+        }
+    div{
+        transform: rotate(360deg);
+    }
+        .dir1
+        {
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            margin-left: 45%;
+            background-color: red;
+            animation-name: new1;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new1
+        {
+            0% {background-color: rgb(204, 255, 0) ; left : 0px;top:0px;}
+            100%{background-color: red; left: 0px; top :260px}
+           
+        }
+        .dir2
+        {
+            position: absolute;
+            width: 10px;
+            height: 100px;
+            background-color: rgb(255, 0, 115);
+            animation-name: new2;
+            margin-left: 0%;
+            margin-top: 20%;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new2
+        {
+            0% {background-color: rgb(55, 0, 255) ; left : 0px;top:0px;}
+            100%{background-color: rgb(255, 0, 255); left: 585px; top :0px}
+           
+        }
+        .dir3
+        {
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            margin-left: 45%;
+            margin-top: 48%;
+            background-color: rgb(166, 219, 162);
+            animation-name: new3;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new3
+        {
+            0% {background-color: rgb(250, 250, 250) ; left : 0px;top:0px;}
+            100%{background-color: rgb(250, 130, 202); left: 0px; top :-270px}
+            
+        }
+        .dir4
+        {
+            position: absolute;
+            width: 10px;
+            height: 100px;
+            margin-left: 98%;
+            margin-top: 20%;
+            background-color: rgb(201, 156, 156);
+            animation-name: new4;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new4
+        {
+            0% {background-color: rgb(0, 255, 13) ; left : 0px;top:0px;}
+            100%{background-color: rgb(182, 49, 89); left: -600px; top :0px}
+            
+        }
+        
+        @keyframes backgroundTransition {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="dir1"></div>
+        <div class="dir2"></div>
+        <div class="dir3"></div>
+        <div class="dir4"></div>
+    </div>
+</body>
+
+</html>

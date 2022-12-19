@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 : Animation</title>
+    <style>
+        
+        .demo{
+            background: repeating-conic-gradient(red 10%, black 15%);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            transition: 5s;
+            margin-right: 50px;
+            position: relative;
+            animation-name: rotateWheel;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes rotateWheel{
+            0%{
+                left:0;
+                transform: rotate(0deg);
+            }
+            100%{
+                left: 100%;
+                transform: rotate(360deg);
+            }
+        }
+        .demo2{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-name: changeBg;
+            animation-duration: 5s;
+            background-color: red;
+        }
+        @keyframes changeBg{
+            0%{background-color: red; left: 0px; bottom:0px}
+            25%{background-color: green; left: 100px; bottom:0px}
+            50%{background-color: blue; left: 100px; bottom:100px}
+            75%{background-color: yellow; left: 0px; bottom:100px}
+            100%{background-color: red; left: 0px; bottom:0px}
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="demo"></div>
+    <div class="demo2"></div>
+</body>
+</html>
