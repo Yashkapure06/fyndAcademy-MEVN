@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 : Media Queries</title>
+    <style>
+        .demo{
+            text-align: center;
+            background-color: rgb(255, 255, 177);
+            font-size: xx-large;
+            display: none
+        }
+        @media only screen and (min-width:350px) and (max-width:500px){
+            .div1{
+                display: block;
+                background-color: rgb(255, 101, 242);
+            }
+
+        }
+        @media only screen and (min-width:501px) and (max-width:800px){
+            .div2{
+                display: block;
+                background-color: rgb(192, 181, 252);
+            }
+
+        }
+        @media only screen and (min-width:801px) and (max-width:1000px){
+            .div3{
+                display: block;
+                background-color: rgb(255, 198, 198);
+            }
+
+        }
+        @media only screen and (min-width:1001px){
+            .div4{
+                display: block;
+                background-color: rgb(101, 227, 124);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div1 demo">This div is for Phone</div>
+    <div class="div2 demo">This div is for Tablets </div>
+    <div class="div3 demo">This div is for Laptops</div>
+    <div class="div4 demo">This div is for Broder Screen</div>
+</body>
+</html>

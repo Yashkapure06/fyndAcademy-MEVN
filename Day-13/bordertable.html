@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13: border table</title>
+    <style>
+        .box1{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 20px solid #000;
+            border-image-source: url('https://i.pinimg.com/originals/3b/06/ae/3b06aea61d8380191bf636cfcc471827.jpg');
+            border-image-slice: 70;
+        }
+        .box2{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            border-image-source: url('https://i.pinimg.com/474x/d3/e5/ac/d3e5acac6b14edc4a48ea5abdacb8d3c.jpg');
+            border-image-slice: 70;
+        }
+        .box3{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            border-image-source: url('https://cdn.pixabay.com/photo/2017/02/01/19/53/leaves-2031234__340.png');
+            border-image-slice: 128;
+        }
+        .box4{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            border-image-source: url('https://cdn.pixabay.com/photo/2018/05/17/15/23/flower-3408809__340.jpg');
+            border-image-slice: 40;
+        }
+        .box5{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            border-image-source: url('https://cdn.pixabay.com/photo/2017/03/06/14/12/pink-daisies-2121592__340.jpg');
+            border-image-slice: 40;
+        }
+        .box6{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            border-image-source: url('https://cdn.pixabay.com/photo/2017/02/01/20/03/vintage-2031262__340.png');
+            border-image-slice: 40;
+            border-image-repeat: space;
+        }
+        .box7{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            border-image-source: url('https://cdn.pixabay.com/photo/2018/07/15/14/58/grunge-3539760__340.jpg');
+            border-image-slice: 40;
+            border-image-repeat: repeat;
+        }
+        .box8{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            background-color: rgb(227, 255, 186);
+            border: 30px solid #000;
+            border-image-source: url('https://cdn.pixabay.com/photo/2015/09/13/04/59/border-937718__340.jpg');
+            border-image-slice: 40;
+            border-image-repeat: round;
+            border-image-outset: 40px;
+        }
+        .box9{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            background-color: rgb(227, 255, 186);
+            border: 30px solid #000;
+            border-image-source: url('https://cdn.pixabay.com/photo/2018/07/15/14/58/grunge-3539760__340.jpg');
+            border-image-slice: 50;
+            /*border-image-repeat: round;*/
+            border-image-outset: 20px;
+            border-image-width: 60px;
+
+        }
+        .box10{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            border-image:linear-gradient(red,yellow);
+            border-image-slice:20% fill;
+        }
+        .box11{
+            margin: 50px auto;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            border: 30px solid #000;
+            /*border-image:url('https://cdn.discordapp.com/attachments/1047381979756232714/1053297743659028552/border-image-1.png')  round;*/
+            border-image:url('https://cdn.pixabay.com/photo/2017/03/06/14/12/pink-daisies-2121592__340.jpg')  round;
+            border-image-slice:10% fill;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+    <div class="box11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, autem placeat. Quasi animi corrupti est, pariatur voluptate rerum beatae ad ut officiis nam similique sapiente aperiam necessitatibus labore totam in!</div>
+
+    
+</body>
+</html>
