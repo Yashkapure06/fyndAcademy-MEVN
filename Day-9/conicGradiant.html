@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 : Conic Gradiant</title>
+    <style>
+        body{
+            background: linear-gradient(151deg, #000, rgb(255, 0, 0));
+            background-size:50px 50px; 
+        }
+        
+        .demo{
+            background: repeating-conic-gradient(
+                black 0deg 90deg,
+                white 90deg 180deg,
+                black 180deg 270deg,
+                white 270deg 360deg,
+                black 360deg 0deg
+            );
+            border-radius: 50%;
+            width: 700px;
+            height: 700px;
+            transition: 5s;
+        }
+        .demo:hover{
+            background: repeating-conic-gradient(
+                white 0deg 180deg,
+                black 180deg 360deg,
+            );
+            transform: rotate(360deg);
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo"></div>
+</body>
+</html>
