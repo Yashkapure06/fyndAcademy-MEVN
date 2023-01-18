@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 19: Objects</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <p id="demo"></p>
+    <script>
+      //* object 1
+      // var a = {
+      //     name: "Yash",
+      //     age: 21,
+      //     city: "Nashik"
+      // }
+      // document.write(a)
+      // document.write(a.name + " is " + a.age + " years old and lives in " + a.city + ".<br>");
+
+      // object 2
+      //var book = new Object();
+      //book.subject = "JavaScript";
+      //book.author = "Yash";
+      //document.write(book.subject + " is written by " + book.author + ".<br>");
+
+      // object 3 - constructor function
+      // function book(title, author){
+      //     title=title;
+      //     author=author;
+      //     console.log(author + " " + title);
+      // }
+      // var book1 = new book("JavaScript", "Yash");
+      // var book2 = new book("Python", "Yash");
+      // document.write(book1.title + " is written by " + book1.author + ".<br>");
+      // document.write(book2.title + " is written by " + book2.author + ".<br>");
+
+      // This keyword
+      //console.log(this)
+
+      // function show(){
+      //        console.log('this is a show');
+      //          console.log(this);
+      //   }
+      //   show();
+
+      // object - 4
+      //   a=this;
+      //   document.getElementById("demo").innerHTML = a;
+      //   console.log(a)
+      //const a = {
+      //        name: "Yash",
+      //        age: 21,
+      //        sum: function () {
+      //          var add = 2 + 2;
+      //          console.log(add);
+      //          console.log(this);
+      //        },
+      //      };
+      //      a.sum();
+
+      //object ke andhar array
+      //create an object inside another
+      //array object
+
+      //const objectArray = {
+      //  topic: ["This is Object Array"],
+      //  numbers: [10, 20, 30, 40, 50, 60, 70],
+      //  lectureDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      //  holidays: ["Saturday", "Sunday"],
+      //};
+      //console.log(objectArray);
+
+      //const nestedObject = {
+      //  topic: "This is Nested Object",
+      //  courses: {
+      //    frontEnd: "Vue.js",
+      //    backEnd: "ExpressJs, NodeJs",
+      //  },
+      //  certification: {
+      //    certi1: "Udemy",
+      //    certi2: "Coursera",
+      //  },
+      //};
+      //console.log(nestedObject);
+
+      const arrayObjects = [
+        {
+          topic: "This is Array Object",
+          subject: "JS",
+          tutor: "AJ AA",
+        },
+        {
+          topic: "This is Array2 Object",
+          subject: "JS2",
+          tutor: "AJ AA2",
+        },
+        {
+          topic: "This is Array3 Object",
+          subject: "JS3",
+          tutor: "AJ AA3",
+        },
+        //objectArray,
+        //nestedObject,
+      ];
+      for (let i = 0; i <= arrayObjects.length - 1; i++) {
+        console.log(arrayObjects[i]);
+      }
+      console.log("The 1st value of array object: ", arrayObjects);
+    </script>
+  </body>
+</html>

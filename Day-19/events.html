@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19 : Events</title>
+    <style>
+        #btn{
+            background-color:crimson;
+            padding:10px 14px;
+            color:white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minus sed cum architecto, beatae maiores eos exercitationem qui modi itaque nisi repellendus explicabo temporibus incidunt aliquid earum et at excepturi.
+        </p>
+        <button id="btn"onclick="toggleHide()">Show/Hide</button>
+    </div>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener("mouseover", function run(){
+            console.log('Mouse Inside');
+            //Add backgrond Color
+        })
+        para.addEventListener("mouseout", function run(){
+            console.log('Mouse OutSide');
+        })
+        function toggleHide(){
+            if(para.style.display!="none"){
+                para.style.display='none'
+            }
+            else{
+                para.style.display="block"
+            }
+        }
+    </script>
+</body>
+</html>
