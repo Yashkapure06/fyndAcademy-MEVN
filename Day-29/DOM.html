@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 29: DOM</title>
+    <style>
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        html{
+            color:#333;
+
+        }
+        div,section{
+            padding: 10px;
+            border: 1px solid #333;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    
+    <h2>Id (#demo)</h2>
+    <div id="demo"><span>Span 1</span> Access by ID <span> Span 2</span></div>
+    <h2>Class (.demo)</h2>
+    <div class="demo"> <span> Span 3</span> Access by Class(1) <span>Span 4</span> </div>    
+    <div class="demo">Access by Class(2)</div>
+
+    <h2>Tag (section)</h2>
+    <section>Access by Tag (1)</section>
+    <section>Access by Tag (2)</section>
+
+    <h2>Query Selector</h2>
+    <div class="query-class" id="demo-query">Access me by query</div>
+
+    <h2>Query Selector All</h2>
+    <div class="demo-query-all"> <span>Span 5</span> Access me by query all(1) <span>Span 6</span> </div>
+    <div class="demo-query-all">Access me by query all(2)</div>
+
+     <script>
+       /* const idDemo = document.getElementById('demo')
+        console.log(idDemo)
+        idDemo.style.border = "2px solid red"
+
+        const classDemo= document.getElementsByClassName('demo')
+        console.log(classDemo)
+        classDemo[0].style.border='2px solid purple'
+        for(let i = 0; i < classDemo.length; i++){
+            classDemo[i].style.border='2px solid orange'
+        }
+ 
+        const tagDemo = document.getElementsByTagName('section')
+        console.log(tagDemo)
+        for(let i = 0; i < tagDemo.length; i++){
+            tagDemo[i].style.border='2px solid lightgreen'
+        }
+
+
+        const queryDemo = document.querySelector ('#demo-query')
+        const queryDemo1 = document.querySelector ('.query-class')
+        console.log(queryDemo)
+        console.log(queryDemo1)
+        queryDemo.style.backgroundColor = "lightpink"
+        queryDemo1.style.border = "3px solid red"
+
+        const queryAllDemo = document.querySelectorAll('.demo-query-all')
+        console.log(queryAllDemo)
+        queryAllDemo.forEach(query=>{
+            query.style.backgroundColor = "lightblue"
+        })
+        const demoQueryAll = document.querySelector('.demo-query-all')
+        console.log(demoQueryAll)
+        demoQueryAll.style.border = "3px solid red"*/
+
+
+
+        const spans = document.querySelector('span, h2');
+
+        spans.style.backgroundColor = "pink"
+
+
+     </script>
+    </body>
+</html>
+<!--     
+        document.getElementById("nav")
+        <a id=​"nav" href=​"https:​/​/​www.google.com/​">​Google​</a>​
+        let linkNav = document.getElementById('nav')
+        undefined
+        linkNav
+        <a id=​"nav" href=​"https:​/​/​www.google.com/​">​Google​</a>​
+        linkNav.href = "https://meet.google.com/kaz-vsdz-qqc"
+        'https://meet.google.com/kaz-vsdz-qqc'
+        linkNav.textContent = 'Meet'
+        'Meet'
+
+        *******************************
+        console.log($0)
+VM1220:1 <body>​…​</body>​<h1>​DOM​</h1>​<a id=​"nav" href=​"https:​/​/​www.google.com/​">​Google​</a>​<!--     
+        document.getElementById("nav")
+        <a id=​"nav" href=​"https:​/​/​www.google.com/​">​Google​</a>​
+        let linkNav = document.getElementById('nav')
+        undefined
+        linkNav
+        <a id=​"nav" href=​"https:​/​/​www.google.com/​">​Google​</a>​
+        linkNav.href = "https://meet.google.com/kaz-vsdz-qqc"
+        'https://meet.google.com/kaz-vsdz-qqc'
+        linkNav.textContent = 'Meet'
+        'Meet'
+     *********************
+        <script>​…​</script>​<div id=​"torrent-scanner-popup" style=​"display:​ none;​">​…​</div>​</body>​
+            undefined
+            $0.nodeName
+            'BODY'
+            $0.nodeValue
+            null
+            $0.nodeName
+            'H1'
+            $0.nodeValue
+            null
+            console.log($0)
+            VM1456:1 <h1>​DOM​</h1>​
+            undefined
+     -->
+
