@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 27: JS Revision</title>
+    <style>
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>var, let, const</p> -->
+    <div id="form">
+      <h1 id="h1">Keyboard Events</h1>
+      <p>OnKeyDown</p>
+      <input type="text" name="" id="down" />
+
+      <p>OnKeyUp</p>
+      <input type="text" name="" id="up" />
+      <p>OnKeyPress</p>
+      <input type="text" name="" id="press" />
+    </div>
+
+    <script>
+      /*var a = 10;
+        a=2;
+        console.log(a);
+        let b=6;
+        function b1(){
+            let b = 20;
+            console.log(b);
+        }
+        b1()
+        
+        console.log(b);*/
+      let date = Date();
+      //  console.log(date)
+
+      let sankranti = new Date("Jan 15, 2023");
+      //console.log(sankranti);
+
+      let now = new Date();
+      console.log(now.getHours() + ":" + now.getMinutes());
+
+      /* const indianTime = () => {
+            let inDate = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata",timeStyle:'long', hourCycle:"h12"});
+            document.getElementById('indate').innerHTML = inDate;
+        }
+        indianTime()
+        setInterval(indianTime,1000);*/
+      /* setInterval(function(){
+            console.log("Hello");
+        }, 1000);  // Will log "Hello" every 1 second*/
+
+      /*function show(){
+            alert("Welcome Yash!")
+        }*/
+
+      let keyDown = document.getElementById("down");
+      keyDown.addEventListener("keydown", function (e) {
+        console.log(e.keyCode);
+      });
+
+      let keyUp = document.getElementById("up");
+      keyUp.addEventListener("keyup", function (e) {
+        console.log(e.keyCode);
+      });
+
+      let keyPress = document.getElementById("press");
+      keyPress.addEventListener("keypress", function (e) {
+        //console.log(e.keyCode);
+      });
+    </script>
+  </body>
+</html>
