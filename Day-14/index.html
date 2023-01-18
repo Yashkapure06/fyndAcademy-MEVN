@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14: Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                    <h1 id="c_name"><span id="c_name1">FYND</span> ACADEMY</h1>
+                </div>
+                <div class="close" id="close_btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        grid_view
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        person
+                    </span>
+                    <h3>Students</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        menu_book
+                    </span>
+                    <h3>Course</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        trending_up
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        chat
+                    </span>
+                    <h3>Messages <span class="message_count">19</span></h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>Add Course</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+
+
+        <!-- ====main===== -->
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="total_students">
+                    <span class="material-icons-sharp">groups</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Students</h3>
+                            <h1>89</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class_request">
+                    <span class="material-icons-sharp">request_page</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Class Request</h3>
+                            <h1>14</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="student_activity">
+                    <span class="material-icons-sharp">self_improvement</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Students Activity</h3>
+                            <h1>18</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="notifications">
+                    <span class="material-icons-sharp">notifications_active</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Notifications</h3>
+                            <h1>14</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="recent_students">
+                <h2>Recent Students</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="sn">Student Name</th>
+                            <th>Student UID</th>
+                            <th>Course Name</th>
+                            <th>Fee Status</th>
+                            <th id="detail"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Sarah</td>
+                            <td>48</td>
+                            <td>Fashion</td>
+                            <td>Completed</td>
+                            <td>details</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Sarah</td>
+                            <td>48</td>
+                            <td>Fashion</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">details</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Sarah</td>
+                            <td>48</td>
+                            <td>Fashion</td>
+                            <td>Completed</td>
+                            <td>details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sarah</td>
+                            <td>48</td>
+                            <td>Fashion</td>
+                            <td>Completed</td>
+                            <td>details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sarah</td>
+                            <td>48</td>
+                            <td>Fashion</td>
+                            <td>Completed</td>
+                            <td>details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="show">Show All</a>
+            </div>
+        </main>
+
+        <!--* Right Side  -->
+        <div class="right">
+            <div class="top">
+                <button class="menu_btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+
+                <div class="theme_change">
+                    <span class="material-icons-sharp active">brightness_4</span>
+                    <span class="material-icons-sharp">brightness_7</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hello, Sara Jessica Parker</p>
+                        <small>Admin</small>
+                    </div>
+
+                    <div class="profile_photo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Sarah_Jessica_Parker_Deauville_2018_%28cropped%29.jpg"
+                            alt="">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="recent_highlights">
+                <h2>Recent Highlights</h2>
+                <div class="highlights">
+                    <div class="highlight">
+                        <div class="profile_photo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Sarah_Jessica_Parker_Deauville_2018_%28cropped%29.jpg"
+                                alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Cinthia Nixon</b> has submitted the assignment_1 on Thursday </p>
+                            <small>5 Mins Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <div class="profile_photo">
+                            <img src="https://i.insider.com/57c73edd09d29325008b5801?width=667&format=jpeg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Eleven </b> has submitted the assignment_1 on Thursday </p>
+                            <small>15 Mins Ago</small>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <div class="profile_photo">
+                            <img src="https://assets.vogue.in/photos/6130c32595bc394a4898bee0/2:3/w_2560%2Cc_limit/NETFLIX__URSULA%2520CORBERO_Money-Heist-Part-5.jpg"
+                                alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Tokyo </b> has submitted the assignment_1 on Thursday </p>
+                            <small>5 Hrs Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--* student analysis  -->
+            <div class="student_analysis">
+                <h2>Student Analysis</h2>
+                <div class="student_analytics">
+                    <div class="icon">
+                        <span class="material-icons-sharp active">moving</span>
+                    </div>
+
+                    <div class="right">
+                        <div class="info">
+                            <h3>Attendance > 85%</h3>
+                            <small>Last 12 Hours</small>
+                        </div>
+                        <h5 class="success">+35%</h5>
+                    </div>
+                </div>
+
+                <div class="student_analytics">
+                    <div class="icon">
+                        <span class="material-icons-sharp active">sync_alt</span>
+                    </div>
+
+                    <div class="right">
+                        <div class="info">
+                            <h3>Attendance > 55%</h3>
+                            <small>Last 12 Hours</small>
+                        </div>
+                        <h5 class="success">+45%</h5>
+                    </div>
+                </div>
+
+                <div class="student_analytics">
+                    <div class="icon">
+                        <span class="material-icons-sharp active">trending_down</span>
+                    </div>
+
+                    <div class="right">
+                        <div class="info">
+                            <h3>Attendance < 55%</h3>
+                                    <small>Last 12 Hours</small>
+                        </div>
+                        <h5 class="warning">+25%</h5>
+                    </div>
+                </div>
+
+                <div class="additional_information student_analytics">
+                    <div>
+                        <button>Click Here</button> to See the Attendance of Individual Student
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
