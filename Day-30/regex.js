@@ -158,7 +158,7 @@ function validateForm() {
     alert("All fields are required!");
     return false;
   }
-  
+
 
   if (!/^\d{10}$/.test(phone)) {
     alert("Invalid phone number!");
@@ -169,6 +169,5 @@ function validateForm() {
     alert("Password must be at least 8 characters long!");
     return false;
   }
-
   return true;
 }

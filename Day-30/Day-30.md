@@ -24,4 +24,3 @@
         * Regular expressions are also used to validate form input, to manipulate text, such as to change the case of text, or to remove whitespace from the beginning and end of a string.
         * Regular expressions are used with the exec() and test() methods of RegExp, and with the match(), matchAll(), replace(), replaceAll(), search(), and split() methods of String.
         * This section describes JavaScript regular expressions.
-        
