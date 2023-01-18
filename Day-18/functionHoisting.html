@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18: Function Hoisting</title>
+</head>
+<body>
+    
+
+    <script>
+        //sum(5,10);
+        // This is pure function
+       // function sum(a,b){
+       //     add = a + b;
+       //     console.log("Sum is "+ add)
+       // }
+
+       // this is function expression
+       //sum(5,10); if we call a variable here we get type error
+     //var sum = function(a,b){
+     //    add = a + b;
+     //    console.log("Sum is "+ add)
+     //}
+     //sum(5,10);
+        //var sum = undefined;
+        //function sum(a,b){
+        //    add = a + b;
+        //    console.log("Sum is "+ add)
+        //}
+        //sum(5,10);
+
+        // ECMA Script : This is arrow function
+       // sum(5,10);// if we call a variable here we get type error
+        
+        const sum = (a,b) => {
+            add = a + b;
+            console.log("Sum is "+ add)
+        }
+        sum(5,10);
+    </script>
+</body>
+</html>

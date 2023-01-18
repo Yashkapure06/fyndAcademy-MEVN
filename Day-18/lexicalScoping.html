@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18 : Lexical Scoping</title>
+</head>
+
+<body>
+    <p>JavaScript uses lexical scoping to resolve the
+        variable names when a
+        function is created inside another function.</p>
+
+
+    <script>
+        let d = 67;
+        function outer(){
+            let a = 6;
+            console.log(a);
+            console.log(d);
+            function inner(){
+                let b = 7;
+                console.log(a);
+                console.log(b);
+                console.log(d);
+            }
+            inner();
+        }
+        outer();
+    </script>
+</body>
+
+</html>
