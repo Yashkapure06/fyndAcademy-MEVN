@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 23 : TimeZone</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+   
+    <style>
+        * {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background: transparent;
+            border:none;
+            background-image:url('./earth.gif');
+            background-position: center;
+            background-color: #000;
+            background-repeat: no-repeat;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .timebox{
+            border: 1px solid black;
+            padding: 1rem;
+            display: inline-block;
+            width:180px;
+            height: 180px;
+            text-align: center;
+        }
+        #japan{
+            border:none;
+            background-color: rgba(255, 255, 255, 0.459);
+            transition: 5s;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 0 5px 5px rgb(247, 125, 125);   
+        }
+        #japan p{
+            font-size:20px;
+        }
+        #japan:hover p{
+            color: aliceblue;
+
+        }
+        #japan:hover{
+            background-image:url('https://wallpaperaccess.com/full/12202.jpg');
+            width:20vw;
+            height: 20vh;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
+
+        #india{
+            border:none;
+            background-color: transition();
+            background-color: rgba(255, 255, 255, 0.459);
+            transition: 5s;
+            border-radius: 50% 10% 10% 30%;
+            box-shadow: 0 0 5px 5px rgb(125, 125, 125);   
+        }
+        #india p{
+            font-size:20px;
+        }
+        
+        #india:hover p{
+            font-weight:900;
+            color:rgb(65, 66, 67);
+        }
+        #india:hover{
+            background-image:url('https://media.istockphoto.com/id/1152168512/photo/taj-majal-at-sunrise-in-agra-india.jpg?b=1&s=170667a&w=0&k=20&c=Nq3OPZqm8GGHom31iXvALKH8rt9TgELWnpxNd-dY-ic=');
+            
+            width:20vw;
+            height: 20vh;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
+        
+        #argentina{
+            border:none;
+                        background-color: rgba(255, 255, 255, 0.459);
+            transition: 5s;
+            border-radius: 5% 25% 5% 35%;
+            box-shadow: 0 0 5px 5px rgb(125, 125, 125);   
+        }
+        #argentina p{
+            font-size:20px;
+
+        }
+        #argentina:hover p{
+            font-weight: 900;
+            background: blurred;
+            color: rgb(36, 36, 36);
+
+        }
+        #argentina:hover{
+            background-image:url('https://media.gettyimages.com/id/1428217516/photo/lionel-messi-of-argentina-celebrates-his-goal-in-the-second-half-against-jamaica-at-red-bull.jpg?s=612x612&w=0&k=20&c=DEPj80AZu30tKrR5gX_ijg4mUm9lCbDz0Lb1nmMlv-s=');
+            
+            width:20vw;
+            height: 20vh;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
+        #dubai{
+            border:none;
+            
+            background-color: rgba(255, 255, 255, 0.459);
+            transition: 5s;
+            border-radius: 15% 25% 45% 25%;
+            box-shadow: 0 0 5px 5px rgb(125, 125, 125);   
+        }
+        #dubai p{
+            font-size:20px;
+
+        }
+        #dubai:hover{
+            background-image:url('https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+            
+            width:20vw;
+            height: 20vh;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="timebox" id="india">
+            <h1>India</h1>
+            <p id="indianTime"></p>
+        </div>
+        <div class="timebox" id="argentina">
+            <h1>Argentina</h1>
+            <p id="argentinaTime"></p>
+        </div>
+        <div class="timebox" id="japan">
+            <h1>Japan</h1>
+            <p id="japanTime"></p>
+        </div>
+        <div class="timebox" id="dubai">
+            <h1>Dubai</h1>
+            <p id="dubaiTime"></p>
+        </div>
+    </div>
+
+    <script>
+        const indianTime = () => {
+            document.getElementById("indianTime").innerHTML = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata",timeStyle:'medium', hourCycle:"h12"});
+        }
+        indianTime()
+        setInterval(indianTime,1000);
+
+        const argentinaTime = () => {
+            document.getElementById("argentinaTime").innerHTML = new Date().toLocaleString("en-US", {timeZone: "America/Argentina/Buenos_Aires",timeStyle:'medium', hourCycle:"h12"});
+        }
+        argentinaTime()
+        setInterval(argentinaTime,1000);
+
+        const japanTime = () => {
+            document.getElementById("japanTime").innerHTML = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo",timeStyle:'medium', hourCycle:"h12"});
+        }
+        japanTime()
+        setInterval(japanTime,1000);
+
+        const dubaiTime = () => {
+            document.getElementById("dubaiTime").innerHTML = new Date().toLocaleString("en-US", {timeZone: "Asia/Dubai",timeStyle:'medium', hourCycle:"h12"});
+        }
+        dubaiTime()
+        setInterval(dubaiTime,1000);
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

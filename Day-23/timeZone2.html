@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 23 : timeZone</title>
+    <style>
+      *,
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      #clock {
+        position: relative;
+        height: 100%;
+        width: auto;
+        max-width: 600px;
+        margin: 5%;
+        border-radius: 20px;
+        background-color: transparent;
+        font-family: Arial, Helvetica, sanss-serif;
+        color: #333;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "time" "dates";
+      }
+
+      
+      body {
+        background-image: url("https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+      }
+
+      #timeRow {
+        grid-area: time;
+      }
+
+      #dateRow {
+        grid-area: dates;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        grid-template-areas: "day dates";
+        justify-content: flex-end;
+      }
+
+      #timeOfDay {
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+      }
+      #time {
+        width: 90%;
+        font-size: 12rem;
+        text-align: center;
+      }
+
+      .label {
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        width: 100%;
+      }
+
+      #dayCol {
+        padding-top: 0.5rem;
+        height: 100%;
+        width: 100%;
+      }
+
+      #day {
+        font-size: 5rem;
+        text-transform: uppercase;
+      }
+
+      #datesCol {
+        width: 100%;
+        padding-top: 0.5rem;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+      }
+
+      #date,
+      #month,
+      #year {
+        font-size: 5rem;
+      }
+
+      #month {
+        border-top-width: 0;
+        border-bottom-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock">
+      <section class="row" id="timeRow">
+        <p id="timeOfDay"></p>
+        <p id="time"></p>
+      </section>
+      <section class="row" id="dateRow">
+        <div class="dates" id="dayCol">
+          <p class="label">Day</p>
+          <p id="day"></p>
+        </div>
+        <div class="dates" id="datesCol">
+          <div class="figures">
+            <p class="label">DD</p>
+            <p id="date"></p>
+          </div>
+          <div class="figures">
+            <p class="label">MM</p>
+            <p id="month"></p>
+          </div>
+          <div class="figures">
+            <p class="label">YY</p>
+            <p id="year"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Elements
+      const clock = document.getElementById("clock");
+      const year = document.getElementById("year");
+      const month = document.getElementById("month");
+      const date = document.getElementById("date");
+      const day = document.getElementById("day");
+      const time = document.getElementById("time");
+      const timeOfDay = document.getElementById("timeOfDay");
+
+      function updateClock() {
+        console.log("Started");
+
+        let timestamp = new Date();
+
+        let dayOfWeek = timestamp.getDay();
+        if (dayOfWeek === 0) {
+          dayOfWeek = "sun";
+        } else if (dayOfWeek === 1) {
+          dayOfWeek = "mon";
+        } else if (dayOfWeek === 2) {
+          dayOfWeek = "tue";
+        } else if (dayOfWeek === 3) {
+          dayOfWeek = "wed";
+        } else if (dayOfWeek === 4) {
+          dayOfWeek = "thu";
+        } else if (dayOfWeek === 5) {
+          dayOfWeek = "fri";
+        } else {
+          dayOfWeek = "sat";
+        }
+
+        let hour = timestamp.getHours();
+        if (hour > 19 || hour < 7) {
+          console.log("dark");
+          clock.className = "dark";
+          document.getElementsByTagName("body")[0].className = "dark";
+        }
+        if (hour > 12) {
+          hour -= 12;
+          timeOfDay.innerHTML = "pm";
+        } else {
+          timeOfDay.innerHTML = "am";
+        }
+        hour = String(hour).padStart("2", "0");
+        let min = String(timestamp.getMinutes()).padStart("2", "0");
+        let sec = String(timestamp.getSeconds()).padStart("2", "0");
+
+        year.innerHTML = String(timestamp.getFullYear())
+          .slice(-2)
+          .padStart("2", "0");
+        month.innerHTML = `-${String(timestamp.getMonth() + 1).padStart(
+          "2",
+          "0"
+        )}-`;
+        date.innerHTML = String(timestamp.getDate()).padStart("2", "0");
+        day.innerHTML = dayOfWeek;
+        time.innerHTML = `${hour}:${min}:${sec}`;
+      }
+
+      setInterval(updateClock, 1000);
+    </script>
+  </body>
+</html>
