@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatable" content="ie-edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <title>
+        The Yoga Bar
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: url("https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .logo {
+            letter-spacing: 1px;
+            float: left;
+            color: white;
+            font-size: 30px;
+            line-height: 50px;
+            padding: 0 5px 5px;
+            margin: 10px 10px;
+            border: 2px solid white;
+            text-decoration: underline;
+        }
+
+        .header {
+            position: absolute;
+            top: 200px;
+            right: 200px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 46px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .header p {
+            color: white;
+            font-size: 18px;
+            font-weight: lighter;
+            margin-bottom: 50px;
+        }
+
+        label {
+            color: white;
+        }
+
+        #email {
+            width: 300px;
+            height: 40px;
+            border: 2px white solid;
+            background: none;
+            margin-top: 10px;
+            padding-left: 5px;
+            color: white;
+        }
+
+        .button {
+            background-color: #33ccff;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            opacity: 0.5;
+        }
+
+        #updates {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+
+        .updates-label {
+            font-size: 12px;
+        }
+
+        .about {
+            position: absolute;
+            top: 150%;
+            left: 200px;
+            color: #252525;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .services {
+            position: absolute;
+            top: 180%;
+            color: #252525;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .services_list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .service {
+            width: 300px;
+            height: 300px;
+            background-color: #f2f2f2;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .service h3 {
+            color: #252525;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .service p {
+            color: #252525;
+            font-size: 18px;
+            font-weight: lighter;
+            margin-bottom: 0;
+        }
+
+        .pricing{
+            position: absolute;
+            top: 300%;
+            color: #252525;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .pricing_list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .price {
+            width: 300px;
+            height: 300px;
+            background-color: #f2f2f2;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .price h3 {
+            color: #252525;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .price p {
+            color: #252525;
+            font-size: 18px;
+            font-weight: lighter;
+            margin-bottom: 0;
+        }
+
+        .card {
+            background-color: rgba(96, 96, 255, 0.75);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        .pricing{
+            position: absolute;
+            top: 250%;
+            color: #252525;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            yoga-bar
+        </div>
+        <div class="header">
+            <h1>The Yoga Bar</h1>
+            <p>Classes for all skill levels starting May 2023...
+            <p>
+            <form>
+                <label for="email" class="email-label">Join the waiting list:</label><br>
+                <input type="email" id="email" name="email" placeholder="email">
+                <button class="button" type="submit" value="Submit">Submit</button></br>
+                <input type="checkbox" id="updates" name="updates">
+                <label for="updates" class="updates-label">I agree to receive promotional emails and updates.</label>
+            </form>
+        </div>
+
+    </div>
+    <div class="about">
+        <h2>About</h2>
+        <p>
+            Our studio is a place to find your inner peace. We offer a variety of classes for all skill levels. We
+            believe that yoga is for everyone and we are committed to making it accessible to all. We are excited to
+            open our doors in May 2023 and can't wait to meet you!
+        </p>
+
+    </div>
+    <div class="services">
+        <h2>Services</h2>
+        <p>
+            We offer a variety of classes for all skill levels. We believe that yoga is for everyone and we are
+            committed to making it accessible to all. We are excited to open our doors in May 2023 and can't wait to
+            meet you!
+        </p>
+        <div class="services_list">
+            <div class="service">
+                <h3>Yoga</h3>
+                <p>
+                    We offer a variety of classes for all skill levels. We believe that yoga is for everyone and we
+                    are committed to making it accessible to all. We are excited to open our doors in May 2023 and
+                    can't wait to meet you!
+                </p>
+            </div>
+            <div class="service">
+                <h3>Yoga</h3>
+                <p>
+                    We offer a variety of classes for all skill levels. We believe that yoga is for everyone and we
+                    are committed to making it accessible to all. We are excited to open our doors in May 2023 and
+                    can't wait to meet you!
+                </p>
+            </div>
+            <div class="service">
+                <h3>Yoga</h3>
+                <p>
+                    We offer a variety of classes for all skill levels. We believe that yoga is for everyone and we
+                    are committed to making it accessible to all. We are excited to open our doors in May 2023 and
+                    can't wait to meet you!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing_card">
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
