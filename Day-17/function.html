@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 : Functions</title>
+</head>
+<body>
+    <script>
+        //function functionName(){    
+        //    let a = 66;
+        //    console.log(a);
+        //    return a;
+        //}
+        //let b = functionName();
+        //console.log(b);
+        //let b = functionName;
+        //console.log(b);// here now  we will get whole function in o/p
+        
+        // Here we are showing Anonymus function 
+       //let a = function(){
+       //    console.log("Hi");
+       //}
+       //console.log(a())
+        //a()
+
+        // Here we are showing IIFE
+        // IIFE (Immediately Invoked Function Expression) 
+        //is a JavaScript function that runs as soon as it 
+        //is defined
+        //(function(){
+        //    console.log("Hi");
+        //})();
+       //let z = function(){
+       //    console.log("Hi");
+       //}();
+       //let x = z;
+       //console.log(x);
+
+       //parameterized functions
+
+        function show(name){//here name is parameter
+            let a = name;
+            console.log('The name is :'+a);
+        }
+        show("Yash");// here we pass value which is argument
+
+        function add(a,b){
+            return a+b;
+        }
+        console.log(add(1,4));
+    </script>
+</body>
+</html>
