@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 25 : Q4</title>
+    <style>
+        input{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 7px;
+            border:1px solid lightblue;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 7px;
+            border:1px solid lightblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+    <input type="number" id="input1"> +
+    <input type="number" id="input2"> =
+    <input type="number" id="addSolution" disabled>
+
+    <button onclick="add()">Add</button>
+    <!-- <button onclick="sub()">Sub</button> -->
+
+
+    <script>
+        function add(){
+            let input1 = document.getElementById("input1").value;
+            let input2 = document.getElementById("input2").value;
+            let addSolution = document.getElementById("addSolution");
+            addSolution.value = parseInt(input1) + parseInt(input2);
+        }
+
+        function sub(){
+            let input1 = document.getElementById("input1").value;
+            let input2 = document.getElementById("input2").value;
+            let addSolution = document.getElementById("addSolution");
+            addSolution.value = parseInt(input1) - parseInt(input2);
+        }
+    </script>
+</body>
+</html>

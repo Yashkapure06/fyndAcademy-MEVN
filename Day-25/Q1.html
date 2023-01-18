@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 25 : Question 1</title>
+</head>
+<body>
+
+    <p>Write a js function to split a string and convert it into array of words</p>
+    <script>
+
+        function splitString(inputSting){
+            let array = inputSting.split(" ");
+            return array;
+            for(let i =0; i<array.length;i++){
+                if(array[i].length===0){
+                    return array.splice(i,1);
+                }                
+            }
+            
+        }
+
+        let inputSting = "Yash Kapure Atharva Siddharth   Yash";
+        console.log(inputSting)
+        console.log(splitString(inputSting));
+    </script>
+</body>
+</html>
