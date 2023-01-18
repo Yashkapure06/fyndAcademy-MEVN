@@ -16,7 +16,7 @@
 
 nav{
     grid-area:nav;
-    background-color: rgb(220, 255, 191);
+    background-color: #dcffbf;
     border-radius:7px;
     padding-top: 5p;
 }
