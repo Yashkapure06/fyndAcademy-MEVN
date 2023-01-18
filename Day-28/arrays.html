@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 28: Arrays</title>
+</head>
+<body>
+
+
+    <script>
+        //addinng data in array
+      /*  let fruits1 = ["Mango", "Apple","Orange"];
+        console.log(fruits1);
+        console.log(fruits1.push('Watermelon'))
+        //push and pop operation works as stack
+        //pop removes last element
+        //push and pop will remove element as well as its memory
+        console.log(fruits1);
+        console.log(fruits1.pop());
+        console.log(fruits1);
+        fruits2 = fruits1.toString()
+        console.log(fruits2);
+        console.log(fruits2.length);
+*/
+        //shift and unshift
+        //shift removes first element
+        //unshift adds element at first
+        //shift and unshift will not remove element as well as its memory
+        /*let fruits1 = ["Mango", "Apple","Orange"];
+        console.log(fruits1);
+        console.log(fruits1.shift())
+        console.log(fruits1);
+        console.log(fruits1.unshift('Watermelon'))
+        console.log(fruits1);*/
+        /*let fruits1 = ["Mango", "Apple","Orange"];
+        console.log(fruits1);
+        console.log(delete fruits1[0])
+        console.log(fruits1[0]);*/
+
+        //combine two arrays
+        /*let fruits = ["Mango", "Apple","Orange"];
+        let veg = ["Potato", "Carrot"]
+        let fruits3 = fruits.concat(veg);
+        console.log(fruits3);*/
+
+        //combine three arrays
+        /*let fruits = ["Strawberry", "PineApple","Banana"];
+        let fruits1 = ["Mango", "Apple","Orange"];
+        let veg1 = ["Potato", "Carrot"]
+        let fruits4 = fruits1.concat(veg1, fruits);
+        console.log(fruits4);*/
+
+        //splice()
+        //splice() method adds/removes items to/from an array, and returns the removed item(s).
+        //splice() changes the original array.
+        //splice() method takes 3 parameters (2 required):
+        //The index where new elements should be added (spliced in)
+        //The number of elements to be removed (spliced out)
+        //The new element(s) to be added
+        // Elements when deleted will be deleted from memory as well
+        //The splice() method returns an array with the deleted items:
+        /*let fruits = ["Strawberry", "PineApple","Banana"];
+        console.log(fruits);
+        fruits.splice(1, 0, "Mango", "Apple");
+        console.log(fruits);
+        fruits.splice(2, 1, "Orange");
+        console.log(fruits);*/
+
+        //slice()
+        //The slice() method slices out a piece of an array into a new array.
+        //This example slices out a part of an array starting from array element 1 ("Orange"):
+        /*let fruits = ["Strawberry", "PineApple","Banana"];
+        console.log(fruits);
+        let fruits1 = fruits.slice(2);
+        console.log(fruits1);*/
+        //The slice() method creates a new array. It does not remove any elements from the source array.
+        //The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+        
+        //sort
+        //The sort() method sorts the items of an array.
+        //The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).
+        //By default, the sort() method sorts the values as strings in alphabetical and ascending order.
+        //This works well for strings ("Apple" comes before "Banana").
+        //However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+        //Because of this, the sort() method will produce an incorrect result when sorting numbers.
+        //You can fix this by providing a "compare function"
+      
+      
+        // let fruits = ["Strawberry", "PineApple","Apple","Banana"];
+        //console.log(fruits);
+       // console.log(fruits.sort());
+        //sort descending
+        //console.log(fruits.sort().reverse());
+        //let and const difference in array 
+        //let can be changed but const cannot be changed
+        //sort objects in array
+        let fruits1 = [
+            { name: "Apple", color: "red" },
+            { name: "Banana", color: "yellow" },
+            { name: "Kiwi", color: "green" },
+            { name: "Mango", color: "orange" },
+            { name: "Grapes", color: "purple" }
+        ];
+        console.log(fruits1.sort((a,b) => (a.name > b.name) ? 1 : -1));
+        
+
+
+
+    </script>
+</body>
+</html>
