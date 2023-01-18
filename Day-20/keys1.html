@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20: Keys Event</title>
+</head>
+<body>
+    <div id="form">
+        <h1 id="h1">Keyboard Events</h1>
+        <p>OnKeyDown</p>
+        <input type="text" name="" id="down">
+        <p>OnKeyUp</p>
+        <input type="text" name="" id="up">
+        <p>OnKeyPress</p>
+        <input type="text" name="" id="press">
+    </div>
+
+
+    <script>
+        let keyDown = document.getElementById('down')
+        keyDown.addEventListener('keydown', function show(){
+            //alert(this.value);
+            document.getElementById('form').style.backgroundColor=this.value;
+        })
+        
+        
+        let keyUp = document.getElementById('up')
+        keyUp.addEventListener('keyup', function show(){
+            //alert(this.value);
+            document.getElementById('form').style.backgroundColor=this.value;
+        })
+        
+        
+        let keyPress = document.getElementById('press')
+        keyPress.addEventListener('keypress', function show(){
+            //alert(this.value);
+            document.getElementById('form').style.backgroundColor=this.value;
+        })
+    </script>
+</body>
+</html>

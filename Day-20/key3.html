@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 : Key Events</title>
+</head>
+<body>
+    
+<h1 id='key-info'></h1>
+<input type="text" name="" id="changeBgColor">
+
+    <script>
+        document.addEventListener('keydown', function(e){
+            document.getElementById('key-info').innerHTML = e.key + " " + e.keyCode;
+
+        })
+        let changeBgColor = document.getElementById('changeBgColor');
+        changeBgColor.addEventListener('keydown', function(e){
+            if(e.key === 'Enter'){
+                document.body.style.backgroundColor = this.value;
+            }
+        })
+        
+        
+
+    </script>
+
+</body>
+</html>
