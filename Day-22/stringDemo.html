@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 22 : String</title>
+  </head>
+  <body>
+    <!-- <p id="demo">Welcome! Students</p> -->
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      //let a = "abaaa ljhabf cjljhafldfuahv";
+      //document.getElementById("demo").innerHTML = a.length;
+
+      //let name1 = "abc";
+      //let name2 = "abc";
+
+   //   if (name1 == name2) {
+    //    console.log("Both are same ==");
+   //   } else {
+    //    console.log("Both are not same ==");
+     // }
+
+    //  let name3 = new String("abc");
+     // let name4 = new String("abc");
+
+      //if(name1 == name3){
+      //   console.log("Both are same");
+      //}
+      //else{
+      //    console.log("Both are not same");
+      //}
+
+      //if (name1 === name3) {
+      //  console.log("Both are same for ===");
+      //} else {
+      //  console.log("Both are not same ===");
+     // }
+      //if (name4 === name3) {
+       // console.log("Both are same for ===");
+      //} else {
+      //  console.log("Both are not same ===");
+      //}
+
+      //slicing
+        //let data = 'coffee,milk, tea';
+        //let data2 = data.slice(-11, -5);
+        //console.log('data2 is: '+ data2);
+
+        //substring
+      //  let data = 'coffee,milk, tea';
+     //   let data2 = data.substring(6,12);
+       // console.log('data2 is: '+ data2);
+
+       //substr
+      //   let data = 'coffee,milk,tea,shakes,smoothies';
+      //  let data2 = data.substr(5,12);//from 5 to 12(length)
+     //   console.log('data2 is: '+ data2);
+
+     // replace
+     //   let data = 'coffee,milk,tea,shakes,smoothies';
+     //   let data2 = data.replace('coffee','juice');//replace coffee with juice
+    //    console.log('data2 is: '+ data2);
+
+     //   function show(){
+     //       let str = document.getElementById('demo').innerHTML;
+     //       document.getElementById('demo1').innerHTML = str.replace(/coffee/gi//,'juice');//replace coffee with juice
+     //      //document.getElementById('demo1').innerHTML = str.replaceAll('coffee','juice');//replace coffee with juice
+     //   }
+     //   show()
+
+     //Touppercase
+     /*function show(){
+           let str = document.getElementById('demo').innerHTML;
+        document.getElementById('demo1').innerHTML = str.toUpperCase();
+        
+         }
+          show()*/
+//concat string
+/*
+          let str1 = 'Kate';
+          let str2 = ' Wisnlet';
+          let str3 =  str1.concat(str2);
+          document.write(str3)*/
+//trim // removes whitespace from starting and ending
+          let name1 = "Sarha"
+          let name2 = '     Yash      Kapure   '
+          //let name3 = name2.trim();//trimStart(), trimEnd()
+          //document.getElementById('demo1').innerHTML = name.length;
+          //document.getElementById('demo2').innerHTML = name3.length + " " + name3;
+//task to remove space in between without regex
+         
+
+        let name = "      Yash      Kapure       ";
+        let firstNonWhitespaceIndex = name.indexOf(/\S/);
+        console.log(firstNonWhitespaceIndex)
+        let lastNonWhitespaceIndex = name.lastIndexOf(/\S/);
+        console.log(lastNonWhitespaceIndex)
+        let finalName = name.slice(firstNonWhitespaceIndex, lastNonWhitespaceIndex + 1);
+        document.getElementById('demo1').innerHTML = finalName;
+            //padStart => works on string
+        /* let x = 6;
+         let x2 = x.toString();//toString() is used to convert numbers to strings
+         document.getElementById('demo1').innerHTML = x2.padStart(4,'x');
+*/
+
+    </script>
+  </body>
+</html>

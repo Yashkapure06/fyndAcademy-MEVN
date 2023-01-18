@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 22: String Search</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //let str = "Hello Students, How are you Students?";
+        //document.getElementById("demo").innerHTML = str.lastIndexOf('Students');
+        //document.getElementById("demo").innerHTML = str.search('Students');
+        //difference between search and indexOf
+        
+       /*
+        
+        - search can take regex
+        - indexOf can't take regex
+        
+        */
+        //indexOf
+        // - index Of searches for a specific string or character within the larger string.
+        let str = "Hello Students, How are you?";
+        let searchString = "Students";
+        let index = str.indexOf(searchString);
+        console.log('index 1 : ' + index);  // Output: 16
+        
+        
+        //seearch
+        // - search searches for a pattern within the larger string.
+        let str2 = "Hello Students, How are you ?";
+        let regex = /you/;
+        let index2 = str.search(regex);
+        console.log('index 2 : '+ index2); // Output: 4
+    </script>
+</body>
+</html>
