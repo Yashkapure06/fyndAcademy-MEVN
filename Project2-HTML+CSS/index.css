@@ -32,6 +32,7 @@ body {
   width: 100%;
   height: 70px;
 }
+
 i {
   font-size: 25px;
   margin-right: 15px;
@@ -90,7 +91,7 @@ i {
   cursor: pointer;
   transition: 1s;
 }
-.download a{
+.download a {
   text-decoration: none;
   color: #111 !important;
 }
@@ -107,7 +108,7 @@ i {
   transition: 1s;
 }
 
-.login a{
+.login a {
   text-decoration: none;
   color: #fff !important;
 }
@@ -150,13 +151,13 @@ i {
   cursor: pointer;
   transition: 1s;
 }
-.maincontent button a{
+.maincontent button a {
   text-decoration: none;
   color: #fff !important;
 }
-button:hover{
-    transition: 1s;
-    box-shadow: 0 0 10px #252525;
+button:hover {
+  transition: 1s;
+  box-shadow: 0 0 10px #252525;
 }
 .image {
   grid-area: image;
@@ -184,7 +185,7 @@ button:hover{
 .mockup video {
   max-width: 750px;
   max-height: 750px;
-  background:transparent;
+  background: transparent;
   border-radius: 10px;
 }
 
@@ -287,11 +288,6 @@ button:hover{
   margin-right: 100px;
 }
 
-.mockup2 video:hover{
-    transform: skewX(-5deg);
-    transition: 1s;
-}
-
 .creativity {
   padding-left: 10%;
   display: grid;
@@ -310,11 +306,6 @@ button:hover{
   max-height: 750px;
   border-radius: 10px;
   margin-right: 100px;
-}
-
-.mockup3 video:hover{
-    transform: skewX(5deg);
-    transition: 1s;
 }
 
 .form3 {
@@ -432,11 +423,6 @@ button:hover{
   margin-right: 100px;
 }
 
-.mockup4 video:hover{
-    transform: skewX(-5deg);
-    transition: 1s;
-}
-
 .svg-logo {
   width: 100%;
   height: 100%;
@@ -533,7 +519,7 @@ ul {
 /* Responsive */
 @media (max-width: 991px) {
   .footer-col {
-    width: 50%;
+    width: 70%;
     margin-bottom: 30px;
   }
 }
@@ -548,192 +534,265 @@ ul {
   }
 }
 /* Responsive for mockup*/
+@media screen and (max-width: 1200px) {
+  #header{
+    width: 100%;
+    height: 70px;
+  }
+  .hero .maincontent {
+    margin-top: 15%;
+    font-size: 35px;
+  }
+  .image img{
+    max-width: 650px;
+    max-height: 550px;
+  }
+  .navbar ul li{
+    margin-right: 0;
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .download a{
+    display: block;
+  }
+  .login a{
+    display: block;
+  }
+  .mockup {
+    margin-top: 15%;
+  }
+  .mockup video {
+    max-width: 550px;
+    max-height: 550px;
+  }
+}
+  
+
 @media (max-width: 991px) {
-    
-    .image img{
-        display: none;
-    }
-    .mockup {
-        margin-top: 15%;
-    }
-    .mockup video {
-        max-width: 550px;
-        max-height: 550px;
-    }
-    .hero .maincontent {
-        margin-top: 15%;
-        font-size: 35px;
-    }
+  .image img {
+    max-width: 550px;
+    max-height: 450px;
+    left: -10px;
+
+  }
+  .mockup {
+    margin-top: 15%;
+  }
+  .mockup video {
+    max-width: 550px;
+    max-height: 550px;
+  }
+  .hero .maincontent {
+    margin-top: 15%;
+    font-size: 35px;
+  }
 }
 @media (max-width: 767px) {
-    
-    .mockup {
-        margin-top: 15%;
-    }
-    .mockup video {
-        max-width: 550px;
-        max-height: 550px;
-    }
-    .form {
-        display: none;
-    }
+  .mockup {
+    margin-top: 15%;
+  }
+  .mockup video {
+    max-width: 550px;
+    max-height: 550px;
+  }
+  .form {
+    display: none;
+  }
 }
 @media (max-width: 575px) {
-   
-   
-    .mockup h1{
-        display: none;
-    }
-    .mockup video {
-        max-width: 550px;
-        max-height: 550px;
-
-    }
-    .form {
-        display: none;
-    }
-}   
+  .mockup h1 {
+    display: none;
+  }
+  .mockup video {
+    max-width: 450px;
+    max-height: 450px;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .form {
+    display: none;
+  }
+  .download {
+    display: block;
+  }
+}
 /* Responsive for mockup2*/
 @media (max-width: 991px) {
-    .mockup2 {
-        margin-top: 15%;
-    }
-    .mockup2 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
+  .mockup2 {
+    margin-top: 15%;
+  }
+  .mockup2 video {
+    max-width: 550px;
+    max-height: 550px;
+  }
 }
 @media (max-width: 767px) {
-    .mockup2 {
-        margin-top: 15%;
-    }
-    .mockup2 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
+  .mockup2 {
+    margin-top: 15%;
+  }
+  .mockup2 video {
+    max-width: 550px;
+    max-height: 550px;
+  }
 }
 @media (max-width: 575px) {
-    .mockup2 {
-        margin-top: 15%;
-    }
-    
-    .mockup2 h1{
-        display: none;
-    }
-    .mockup2 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
+  .mockup2 {
+    margin-top: 15%;
+  }
+
+  .mockup2 h1 {
+    display: none;
+  }
+  .mockup2 video {
+    max-width: 450px;
+    max-height: 450px;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
 }
 /* Responsive for mockup3*/
 @media (max-width: 991px) {
-    .mockup3 {
-        margin-top: 15%;
-    }
-    .mockup3 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
+  .mockup3 {
+    margin-top: 15%;
+  }
+  .mockup3 video {
+    max-width: 550px;
+    max-height: 550px;
+  }
 }
 @media (max-width: 767px) {
-    .mockup3 {
-        margin-top: 15%;
-    }
-    .mockup3 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
-    .form3{
-        display: none;
-    }
+  .mockup3 {
+    margin-top: 15%;
+  }
+  .mockup3 video {
+    max-width: 550px;
+    max-height: 550px;
+  }
+  .form3 {
+    display: none;
+  }
 }
 @media (max-width: 575px) {
-    .mockup3 {
-        margin-top: 15%;
-    }
-    .mockup3 h1{
-        display: none;
-    }
-    .mockup3 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
-    .form3{
-        display: none;
-    }
+  .mockup3 {
+    margin-top: 15%;
+  }
+  .mockup3 h1 {
+    display: none;
+  }
+  .mockup3 video {
+    max-width: 450px;
+    max-height: 450px;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .form3 {
+    display: none;
+  }
 }
 /* Responsive for mockup4*/
 @media (max-width: 991px) {
-    .mockup4 {
-        margin-top: 15%;
-    }
-    .mockup4 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
+  .mockup4 {
+    margin-top: 15%;
+  }
+  .mockup4 video {
+    max-width: 550px;
+    max-height: 550px;
+  }
 }
 @media (max-width: 767px) {
-    .mockup4 {
-        margin-top: 15%;
-    }
-    .mockup4 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
-    
-    .form4{
-        display: none;
-    }
+  .mockup4 {
+    margin-top: 15%;
+  }
+  .mockup4 video {
+    max-width: 550px;
+    max-height: 550px;
+  }
+
+  .form4 {
+    display: none;
+  }
 }
 @media (max-width: 575px) {
-    .mockup4 {
-        margin-top: 15%;
-        
-    }
-    .mockup4 h1{
-        display: none;
-    }
-    .mockup4 video {
-        max-width: 550px;
-        max-height: 550px;
-    }
-    .form4{
-        display: none;
-    }
-    .mockup4{
-        grid-area: 1/1/2/2;
-    }
-    .mockup3{
-        grid-area: 1/1/2/2;
-    }
-    .mockup2{
-        grid-area: 1/1/2/2;
-    }
-    .mockup{
-        grid-area: 1/1/2/2;
-    }
-    .svg-logo{
-        grid-area: 2/1/3/2;
-    }
-    .svg-logo .form5 h1{
-        display: none;
-    }
-    .svg-logo .form5 button{
-        display: none;
-    }
-    .express{
-        grid-area: 3/1/4/2;
-    }
-    .freinds{
-        grid-area: 4/1/5/2;
-    }
-    .navbar .nav-link{
-        display: none;
-    }   
-    .navbar .download{
-        display: none;
-    }
-    .navbar .login{
-        display: none;
-    }
+  .mockup4 {
+    margin-top: 15%;
+  }
+  .mockup4 h1 {
+    display: none;
+  }
+  .mockup4 video {
+    max-width: 450px;
+    max-height: 450px;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .form4 {
+    display: none;
+  }
+  .mockup4 {
+    grid-area: 1/1/2/2;
+  }
+  .mockup3 {
+    grid-area: 1/1/2/2;
+  }
+  .mockup2 {
+    grid-area: 1/1/2/2;
+  }
+  .mockup {
+    grid-area: 1/1/2/2;
+  }
+  .svg-logo {
+    grid-area: 2/1/3/2;
+  }
+  .svg-logo .form5 h1 {
+    display: grid;
+    font-size: 45px;
+  }
+  .svg-logo .form5 button {
+    display: grid;
+    font-size: 10px;
+    width: 100%;
+    margin-left: -15%;
+    margin-top: 25%;
+  }
+  .svg-logo .logo img {
+    max-width: 350px;
+    max-height: 350px;
+    padding: 10px;
+  }
+  .express {
+    grid-area: 3/1/4/2;
+  }
+  .freinds {
+    grid-area: 4/1/5/2;
+  }
+  .navbar .nav-link {
+    display: none;
+  }
+  .navbar .download {
+    display: none;
+  }
+  .navbar .login {
+    display: none;
+  }
+  .footer-col img {
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 10%;
+    margin-bottom: 0;
+    background: transparent;
+    overflow: hidden;
+  }
 }
