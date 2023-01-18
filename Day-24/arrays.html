@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 24 : Arrays</title>
+  </head>
+  <body>
+    <h1>Arrays in JS</h1>
+    <p>Arrays are used to store multiple values in a single variable.</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      /*const fruits = [];
+      fruits[0] = "Apple";
+      fruits[1] = "Banana";
+      fruits[2] = "Orange";
+      document.getElementById("demo1").innerHTML = fruits;
+      document.getElementById("demo2").innerHTML = fruits.length;*/
+      
+      
+      /*const fruits1 = ["Apple", "Banana", "Orange"];
+      const fruits2 = ["Apple", "Banana", "Orange"];
+      const fruits3 = new Array("Apple", "Banana", "Orange");
+     
+
+        //compare two arrays
+       
+        for ( var i = 0; i < fruits1.length; i++){
+            if (fruits1[i] != fruits2[i]){
+                console.log("Not Equal");
+            }
+            else{
+                console.log("Equal");
+            }
+        }
+        for ( var i = 0; i < fruits1.length; i++){
+            if (fruits1[i] != fruits3[i]){
+                console.log("Not Equal");
+            }
+            else{
+                console.log("Equal");
+            }
+        }
+        for ( var i = 0; i < fruits1.length; i++){
+            if (fruits1[i] === fruits2[i]){
+                console.log("Equal");
+            }
+            else{
+                console.log("Not Equal");
+            }
+        }*/
+        const fruits1 = ["Apple", "Banana", "Orange", 180];
+        console.log(fruits1[fruits1.length-1]);
+        
+        for (let i = fruits1.length-1; i>=0; i--) {
+              console.log(fruits1[i]);
+              break;
+        }
+
+    </script>
+  </body>
+</html>
