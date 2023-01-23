@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task: Fetch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        div {
+            width: 50%;
+            margin: 10% auto;
+            border: 1px solid black;
+            padding: 40px;
+            border-radius: 7px;
+        }
+
+      
+
+        button {
+            display: block;
+            margin: 10% auto;
+            padding:10px;
+            border-radius:7px;
+            cursor: pointer;
+        }
+
+        #setup {
+            font-weight: bold;
+        }
+
+        #punchline {
+            font-style: italic;
+        }
+        #entries{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1ffr;
+            grid-gap: 10px;
+            grid-template-areas: 
+            'card1 card2 card3 card4'
+            ;                
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p id="setup"></p>
+        <p id="punchline"></p>
+    </div>
+    <button id="joke-button" onclick="getJoke()">Get Joke</button>
+    <hr>
+        <button id="publicEntries" onclick="getPublicEntries()">Show Entries</button>
+        <p id="entries"></p>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
