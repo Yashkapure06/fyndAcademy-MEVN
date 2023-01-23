@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="mainscreen">
+      <h1>The Galaxies</h1>
+      <button class="btn" id="start-btn">Play Button</button>
+      <marquee class="moon_marquee" direction="right" scrollamount="25" behavior="scroll"><img src="./200w-unscreen.gif" alt=""></marquee>
+    </div>
+
+    <div class="mainscreen">
+      <h1>Select Your Favourite Galaxies</h1>
+      <ul class="galaxies-list">
+        <li>
+          <button class="choose-galaxy-btn">
+            <p>Galaxy 1</p>
+            <img
+              src="https://www.pngmart.com/files/22/Galaxy-PNG.png"
+              alt="Galaxies"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-galaxy-btn">
+            <p>Galaxy 2</p>
+            <img
+              src="https://www.pngmart.com/files/22/Galaxy-PNG-Isolated-Photos.png"
+              alt="Galaxies"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-galaxy-btn">
+            <p>Galaxy 3</p>
+            <img src="https://www.pngmart.com/files/22/Galaxy-PNG-Isolated-File.png" alt="Galaxies" />
+          </button>
+        </li>
+
+        
+      </ul>
+    </div>
+
+    <div class="mainscreen game-container" id="game-container">
+      <h3 id="time" class="time">Time:00:00</h3>
+      <h3 id="score" class="score">Score:0</h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
