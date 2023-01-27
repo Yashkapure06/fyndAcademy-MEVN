@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.header {
+  margin: 2% 5% 0 5%;
+}
+
+header {
+  border-radius: 15px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f1000080;
+}
+a .logo {
+  color: #252525;
+  text-decoration: none;
+}
+.logo {
+  position: absolute;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 60px;
+  font-weight: 900;
+}
+#time {
+  text-align: center;
+  margin-top: 27px;
+  margin-right: 48%;
+}
+nav .nav_items ul {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.nav_items ul li {
+  margin-right: 30px;
+}
+.nav_items ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav_items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_items ul li a:hover {
+  font-weight:900;
+}
+/* hero */
+.hero {
+  position: relative;
+  width: 90%;
+  height: 60vh;
+  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: "image";
+  grid-gap: 0.5rem;
+  margin: 7% 3% 0 5%;
+}
+
+.hero .hero_image {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.hero_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.hero_image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 5.1rem;
+  font-weight: 900;
+  text-align: center;
+  
+}
+
+/* Food List container */
+
+.foodslider{
+  margin-top: 10%;
+}
+.foodslider h1{
+  text-align: center;
+  font-size: 3.1rem;
+  margin-top: 10%;
+  font-weight: 900;
+  color: #111;
+}
+
+/* .foodslider{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: "image";
+  grid-gap: 0.5rem;
+  margin: 7% 3% 0 5%;
+} */
+.food-slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.food-slider img {
+  margin-right: 30px;
+}
+
+/*About*/
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% 3% 0 5%;
+}
+
+.about_main {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 900;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.about_content {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.about_info {
+  padding:50%;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_image {
+  margin-top: 10%;
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/*menu  */
+.menu_content{
+  margin-top: 10%;
+}
+.menu_content h1{
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: 900;
+  color: #111;
+}
+.menu_cards{
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  margin: 5% 3% 0 5%;
+}
+.menu_card:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.menu_cards h1{
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: 900;
+}
+.menu_card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+.menu_card img {
+  width: 468px;
+  height: 250px;  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.menu_card h1 {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+/*location*/
+.location {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: 
+  "heading "
+  "map";
+  grid-gap: 0.5rem;
+  margin: 7% 3% 0 5%;
+}
+.location .location_content{
+  grid-area: heading;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 900;
+  width: 100%;
+}
+.location .location_map{
+  grid-area: map;
+  width: 100%;
+  height: 100%;
+}
+.location_map iframe{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24);
+}
+/* country */
+.country_dates {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: fr 1fr 1fr 1fr;
+  grid-template-rows: fr 0.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "text text text"
+    "australia japan china";
+  grid-gap: 10px;
+  margin: 2% 3% 0 5%;
+}
+#country_text {
+  grid-area: text;
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 10%;
+  font-weight: 900;
+  color: #111;
+}
+.timebox {
+  margin-top: 15%;
+  /* border:1px solid #111; */
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 1rem;
+  display: inline-block;
+  justify-content: center;
+  width: 450px;
+  height: 280px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.timebox:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#india {
+  grid-area: india;
+  background-image: url("https://img.freepik.com/free-photo/flat-lay-indian-food-frame_23-2148747715.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#india h1 {
+  color: #fff;
+}
+#australia {
+  grid-area: australia;
+  background-image: url("https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/kingprawnswithspicedhoney-01_0.jpg?itok=w-fbSmhb");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#australia h1 {
+  color: #fff;
+}
+#japan {
+  grid-area: japan;
+  background-image: url("https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8amFwYW5lc2UlMjBmb29kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#japan h1 {
+  color: #fff;
+}
+#china {
+  grid-area: china;
+  background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2019/08/Chinese-Restaurants.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#china h1 {
+  color: #fff;
+}
+.timebox h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.footer-bottom {
+  background: #000;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+.footer-bottom p a {
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+}
+
+.footer-menu {
+  float: right;
+}
+
+.footer-menu ul {
+  display: flex;
+}
+
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+
+.footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  color: #27bcda;
+}
