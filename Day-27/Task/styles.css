@@ -56,7 +56,7 @@ nav .nav_items ul {
 }
 
 .nav_items ul li a:hover {
-  color: rgb(26, 255, 0);
+  font-weight:900;
 }
 /* hero */
 .hero {
@@ -73,7 +73,7 @@ nav .nav_items ul {
     "content image"
     ;
     grid-gap: 0.5rem;
-    margin: 10% 3% 0 5%;
+    margin: 7% 3% 0 5%;
 }
 #hero_content {
   grid-area: content;
