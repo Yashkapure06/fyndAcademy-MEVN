@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+        .category{
+            grid-area:card1 card2; 
+            margin-top:10px; 
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            width:100%
+        }
+        #categories-container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            grid-template-areas: 
+            'card1 card2 card3 card4'
+            ;                
+            margin:25px;
+            
+        }
+        .category p{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .category img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body onload="getFood()">
+    <section class="header">
+        <header>
+            <nav>
+                <a href="#">
+                    <div class="logo">
+                        Restro
+                    </div>
+                </a>
+                <div class="nav_items">
+                    <div id="time">
+                    </div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <section id="categories">
+        <h1>Here are some of Our Famous Dishes</h1>
+        <div id="categories-container"></div>
+    </section>
+    <br>
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>RESTRO</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae felis scelerisque, gravida sapien
+                non, cursus augue. Aenean id pretium turpis. Suspendisse eros nunc, sollicitudin nec.</p>
+
+            <br><br>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>Copyright &copy <span id="year"></span> <a href="#">RESTRO</a> </p>
+
+            <div class="footer-menu">
+
+                <ul class="f-menu">
+
+                    <li><a href="">Home</a></li>
+
+                    <li><a href="">About</a></li>
+
+                    <li><a href="">Contact</a></li>
+
+                    <li><a href="">Blog</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        //Fetch api
+// https://www.themealdb.com/api/json/v1/1/categories.php
+
+fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
+  .then(response => response.json())
+  .then(data => {
+    let categoriesHTML = '';
+    // Use data.categories to access the array of categories
+    data.categories.forEach(category => {
+      categoriesHTML += `<div class="category" >
+                            <p>${category.strCategory}</p>
+                            <img src="${category.strCategoryThumb}"/>
+                         </div>`;
+    });
+    // Append the categoriesHTML to the page
+    document.getElementById("categories-container").innerHTML = categoriesHTML;
+  });
+
+
+    </script>
+</body>
+
+</html>
