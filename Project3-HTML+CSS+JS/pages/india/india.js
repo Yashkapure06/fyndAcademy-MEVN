@@ -3,9 +3,9 @@ const indianTime = () => {
   
   let message = "";
   if (currentTime >= "8:00:00 AM" && currentTime <= "10:30:00 PM") {
-    message = `<strong>Opened</strong>`;
-  } else {
     message = `<strong>Closed</strong>`;
+  } else {
+    message = `<strong>Opened</strong>`;
   }
   document.getElementById("time").innerHTML = currentTime +" "+ message;
 }
