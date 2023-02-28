@@ -37,6 +37,9 @@ Vue.filter('perConv', function(val){
   return val*9.5 +"%";
 })
 
+//filter is used for creating custom
+  
+// 
 Vue.filter('isPalindrome', function(str){
   if(str===''){
     return "Empty String";
