@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .highlight{
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            background:#dfedfb;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .highlight .heading{
+            color: #dfedfb;
+            border-bottom: solid 2px #0d6efd;
+            padding: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            background-color: #0d6efd;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container w-50">
+            <!-- Single File Upload -->
+            <div class="highlight">
+                <div class="heading">Upload Single Image</div>
+                <form action="/singlepost" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <input type="file" name="single_input" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <p></p>
+            <p></p>
+            <p></p>
+        <div class="highlight">
+            <!-- Multiple File Upload -->
+            <div class="heading">Upload Multiple Image</div>
+            <form action="/multiplepost" method="post" enctype="multipart/form-data">
+                <div class="md-3">
+                    <input type="file" name="multiple_input" class="form-control"
+                    multiple
+                    >
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
